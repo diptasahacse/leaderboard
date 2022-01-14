@@ -155,6 +155,10 @@ hr{
 .star-rating .fas.unfilled{
     color: #AEAEAE;
 }
+.star-rating span{
+    font-size: 14.69px;
+    color: #A2A2A2;
+}
 .course-duration{
     display: flex;
     align-items: center;
