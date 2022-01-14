@@ -158,6 +158,7 @@ hr{
 .star-rating span{
     font-size: 14.69px;
     color: #A2A2A2;
+    margin-left: 10px;
 }
 .course-duration{
     display: flex;
