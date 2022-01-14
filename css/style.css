@@ -1,0 +1,172 @@
+/*===================================================
+Template Name: Leader Board
+Author: Dipta Saha
+Email: diptasaha.lpu.cse@gmail.com
+Description: This is Programming Hero Practice Assignment
+Date: 12th Jan 2022 
+====================================================*/
+
+
+/*===================================================
+CSS INDEX
+----------
+1. Google Fonts
+2. Common CSS
+3. Reusable Components
+4. Top Player Section
+5. Top Blogs Section
+6. Latest Courses Section
+
+====================================================*/
+
+/* 1. Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+
+
+/* 2. Common CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: #F3F1FF;;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+.container{
+    background-color: #ffffff;
+    width: 870px;
+    padding: 0px 33px 43px 33px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* 3. Reusable Components */
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0;
+
+}
+
+
+/* 4. Top Player Section */
+.top-players{
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player h3{
+    margin-left: 13px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+/* 5. Top Blogs Section */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.blog{
+    display: flex;
+}
+.blog-img img{
+    width: 177px;
+    height: 117px;
+}
+.blog-details{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+    margin-top: 12px;
+
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+
+}
+/* 6. Latest Courses Section */
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.course{
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+}
+.course-image img{
+    width: 224px;
+    height: 104px;
+}
+.course h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+.course .course-author{
+    color: #ED6B4F;
+    text-decoration: none;
+    font-size: 14.69px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star-rating .fas{
+    font-size: 12px;
+}
+.star-rating .fas.filled{
+    color: #FFC014;
+}
+.star-rating .fas.unfilled{
+    color: #AEAEAE;
+}
+.course-duration{
+    display: flex;
+    align-items: center;
+    background-color: #FEE5DF;
+    color: #ED6B4F;
+    padding: 4.1px 6.5px 5.5px 5.5px;
+    border-radius: 15px;
+}
+.course-duration .fas{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.course-duration span{
+    font-size: 15px;
+}
